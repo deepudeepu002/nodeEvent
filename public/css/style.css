@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5D001E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #b5002d;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 10px 20px;
+    border: 1px solid #888;
+    width: 85%;
+    max-width: 500px;
+    border-radius: 10px;
+    /* background-color: rgba(206, 69, 69, 0.4); */
+    /* background-color: #5D001E; 
+    color:white;*/
+} 
+.modal-content h3{
+    text-align: center;
+    background-color: #5D001E;
+    color: #fff;
+    padding: 10px;margin:10px 0;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: #5D001E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Inputs Styling */
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="datetime-local"], input[type="url"],input[type="time"],
+input[type="date"], textarea, select {
+    width: 100%;
+    padding: 7px;
+    margin: 5px 0;
+    border: 1px solid #5D001E;
+    border-radius: 5px;
+    font-size: 16px; 
+    color: #5D001E;
+}
+/* Change border color to maroon on focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="datetime-local"]:focus,
+input[type="url"]:focus,
+input[type="time"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {  border: 2px solid #5D001E !important;
+    outline: none !important;  
+    /* color: #5D001E; */
+}
+
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #5D001E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #b5002d;
+}
+
+/* Event Cards Container */
+.event-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+   
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.event-card p {
+    color: #555;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+#eventDate label{display: inline-block;width:20%;padding:15px 0px; }
+#eventDate input{display: flex; width:80%;float: right; }
+#regDeadDate label{display: inline-block;width:40%;padding:15px 0px; }
+#regDeadDate input{display: flex; width:60%;float: right; }
+
+/* #eventForm{
+    color: #5D001E;
+} */

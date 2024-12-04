@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Add Event Button -->
+    <button id="addEventBtn">Add Event</button>
+
+    <!-- Modal for Adding Event -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+           
+            <h3 >Event Registration Form</h3>
+            <form id="eventForm">
+                <span id="closeModalBtn" class="close">&times;</span>
+                <!-- Event Identification -->
+                <input type="text" id="eventName" placeholder="Event Name" required><br>
+                <input type="text" id="category" placeholder="Category" required><br>
+                <select id="status" required>
+                    <option value="">Event Status</option>
+                    <option value="Active">Active</option>
+                    <option value="Inactive">Inactive</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select><br>
+
+                <!-- Event Timing -->
+                 <div id="eventDate">
+                    <label for="date">Date </label> 
+                    <input type="date" id="date" required><br>
+                    <label for="startTime">Start Time </label>
+                    <input type="time" id="startTime" required><br>
+                    <label for="endTime"> End Time </label>
+                    <input type="time" id="endTime" required><br>
+                </div>
+
+                <!-- Location Details -->
+                <input type="text" id="venueName" placeholder="Venue Name" required><br>
+                <input type="text" id="address" placeholder="Address" required><br>
+                <input type="text" id="city" placeholder="City" required><br>
+                <input type="text" id="state" placeholder="State" required><br>
+                <input type="text" id="country" placeholder="Country" required><br>
+                <input type="text" id="postalCode" placeholder="Postal Code" required><br>
+
+                <!-- Description -->
+                <textarea id="briefDescription" placeholder="Brief Description" required></textarea><br>
+                <textarea id="fullDescription" placeholder="Full Description"></textarea><br>
+                 
+                <!-- Pricing -->
+                <input type="number" id="basePrice" placeholder="Base Price" required><br>
+                <input type="text" id="currency" placeholder="Currency" required><br>
+
+                <!-- Social Media -->
+                <input type="url" id="facebook" placeholder="Facebook Link"><br>
+                <input type="url" id="twitter" placeholder="Twitter Link"><br>
+                <input type="url" id="instagram" placeholder="Instagram Link"><br>
+
+                <!-- Accessibility -->
+                <label>
+                    <input type="checkbox" id="wheelchairAccess"> Wheelchair Access
+                </label><br>
+                <label>
+                    <input type="checkbox" id="assistiveListeningDevices"> Assistive Listening Devices
+                </label><br>
+                <label>
+                    <input type="checkbox" id="signLanguageInterpreting"> Sign Language Interpreting
+                </label><br>
+
+                <!-- Media -->
+                <input type="url" id="thumbnail" placeholder="Thumbnail URL"><br>
+                <textarea id="imgUrls" placeholder="Image URLs (comma separated)"></textarea><br>
+
+                <!-- Registration -->
+                <input type="url" id="registrationLink" placeholder="Registration Link"><br>
+               <div id="regDeadDate">
+                    <label for="registrationDeadline">Registration Deadline </label>
+                    <input type="date" id="registrationDeadline" placeholder="Registration Deadline"><br>
+                </div>
+                <!-- Contact Information -->
+                <input type="email" id="contactEmail" placeholder="Contact Email"><br>
+                <input type="tel" id="contactPhone" placeholder="Contact Phone"><br>
+                <input type="text" id="contactPerson" placeholder="Contact Person"><br>
+
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Event Cards -->
+    <div id="eventCardsContainer" class="event-cards-container"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
